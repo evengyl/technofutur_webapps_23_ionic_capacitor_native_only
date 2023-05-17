@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Demo AppLauncher Capacitor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+  <ion-grid>
+
+    <ion-row>
+
+
+      <ion-col>
+        <ion-button (click)="checkCanOpenUrl()"> Check can open App with AppLauncher NATIVE !!</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="openYoutubeApp()">Open App with AppLauncher NATIVE !!</ion-button>
+      </ion-col>
+
+
+      <ion-col>
+        <ion-button (click)="checkCanHadApp()"> Check can had App "instagram"</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button (click)="openInstagramApp()">Open App with AppLauncher "instagram" !!</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-text color="warning">{{messageActionSheetClicked}}</ion-text>
+        </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>

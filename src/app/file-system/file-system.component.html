@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Demo FileSystem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button (click)="writeSecretFile()">Write a file with FileSystem</ion-button>
+        <ion-button (click)="readSecretFile()">Write a file with FileSystem</ion-button>
+        <ion-button (click)="deleteSecretFile()">Write a file with FileSystem</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button color="danger" (click)="statFileSystem()">Stat folder or file</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

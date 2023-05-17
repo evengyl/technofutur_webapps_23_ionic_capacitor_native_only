@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Demo Haptics Engine Vibrator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" (click)="impact(1)">Haptics Impact Light</ion-button>
+        <ion-button color="warning" (click)="impact(2)">Haptics Impact Medium</ion-button>
+        <ion-button color="danger" (click)="impact(3)">Haptics Impact Heavy</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" (click)="vibrate()">Haptics Vibrate</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="dark" (click)="selectionStart()">Haptics Trigger Start</ion-button>
+        <ion-button color="dark" (click)="selectionChanged()">Haptics Trigger Changed</ion-button>
+        <ion-button color="dark" (click)="selectionEnd()">Haptics Trigger End</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" (click)="notification()">Haptics Trigger Start</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
+      <ion-col>
+        <ion-button> Check can had App "instagram"</ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button>Open App with AppLauncher "instagram" !!</ion-button>
+      </ion-col>
+
+    </ion-row> -->
+
+    <ion-row>
+        <ion-col>
+          <ion-text color="warning"></ion-text>
+        </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>
