@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Demo action sheet capacitor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="myShowActions()">Open Action Sheet Capacitor NATIVE !!</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-text color="warning">{{messageActionSheetClicked}}</ion-text>
+        </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>
